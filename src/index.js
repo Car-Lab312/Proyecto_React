@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Digimon } from './components/CRUD_digimoncomponent';
+import { Menu } from './components/Menu_principal';
 import reportWebVitals from './reportWebVitals';
+import "primereact/resources/themes/lara-light-cyan/theme.css";
+
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <PrimeReactProvider>
+      <Menu />
+    </PrimeReactProvider>
   </React.StrictMode>
 );
 

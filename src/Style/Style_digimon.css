@@ -1,0 +1,62 @@
+.contenedor-principal {
+    display: flex;
+    margin-left: 20px;
+    justify-content: flex-start; /* Centra horizontalmente */
+    align-items: flex-start; /* Centra verticalmente */
+    margin-top: 5px;
+}
+
+
+.digimon-buscar {
+    width: 400px;
+    display: flex; /* Asegúrate de que este contenedor también utiliza flex si es necesario */
+    flex-direction: column; /* Si quieres que los elementos dentro estén en columnas */
+    align-items: flex-start; /* Alinea los elementos hacia la izquierda */
+}
+
+.tamaño-multi {
+    display: flex;
+    flex-direction: row; /* Alinea los elementos en fila */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacia los elementos horizontalmente */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+.name-digi {
+    display: flex;
+    width: auto; /* Ajusta el ancho según el contenido */
+}
+
+.multi-digimon {
+    display: flex;
+    flex-grow: 1; /* Permite que el MultiSelect ocupe más espacio */
+}
+
+.digibay{
+    display: flex;
+    position: relative;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Centra verticalmente */
+    margin-top: 5px;
+    margin-left: 20px;
+    width:  310px;
+    height: 310px;
+}
+
+.digimon-mostrar-imagen{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Centra verticalmente */
+    margin-top: 5px;
+    margin-left: 20px;
+    width:  310px;
+    height: 310px;
+}
+
+.digimon{
+    display: flex;
+    position: absolute;
+    transform: translate(-237%, 137%);
+    z-index: 10;
+    border-radius: 11px;
+}

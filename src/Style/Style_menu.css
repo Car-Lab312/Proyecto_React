@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+}
+
+.principal{
+    width: 100vw; /* 100% del ancho de la ventana */
+    height: 100vh; /* 100% del alto de la ventana */
+    background-color: lightblue; /* Color de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones-acceso{
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(20, 80, 50);
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+div{
+    text-align: right;
+}
