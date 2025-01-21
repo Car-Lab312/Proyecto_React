@@ -4,8 +4,15 @@
     justify-content: flex-start; /* Centra horizontalmente */
     align-items: flex-start; /* Centra verticalmente */
     margin-top: 5px;
+    border: solid;
 }
 
+.digifields{
+    /* border: solid; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .digimon-buscar {
     width: 400px;
@@ -33,24 +40,35 @@
 }
 
 .digibay{
+    flex: 1;
     display: flex;
     position: relative;
     justify-content: center; /* Centra horizontalmente */
     align-items: flex-start; /* Centra verticalmente */
-    margin-top: 5px;
-    margin-left: 20px;
-    width:  310px;
-    height: 310px;
+    margin: 10px;
 }
 
 .digimon-mostrar-imagen{
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: flex-start; /* Centra verticalmente */
-    margin-top: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    width:  420px;
+    height: auto;
+    /* border: solid; */
+}
+
+.contenido{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    /* border: solid; */
     margin-left: 20px;
-    width:  310px;
-    height: 310px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 .digimon{
@@ -59,4 +77,55 @@
     transform: translate(-237%, 137%);
     z-index: 10;
     border-radius: 11px;
+}
+
+.info{
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    /* border: solid; */
+    display: flex;
+    font-style: italic;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+/* Móviles */
+@media (max-width: 760px) {
+    .contenido{
+        width: auto;
+        height: auto;
+    }
+
+    .digimon-mostrar-imagen{
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+}
+
+/* Tableta */
+@media (min-width: 1000px) {
+    .contenido{
+        width: auto;
+        height: auto;
+    }
+
+    .digimon-mostrar-imagen{
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+}
+
+/* Pantalla completa */
+@media (min-width: 1024px) {
+    .contenido{
+        width: auto;
+        height: auto;
+    }
+
+    .digimon-mostrar-imagen{
+        margin-top: 20px;
+        margin-right: 30px;
+    }
 }

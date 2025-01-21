@@ -22,5 +22,8 @@ export function useFetch(url){
         setLoading(false);
       });
     }, []);
+
+    // console.log(data)
+
     return { data }
   }
