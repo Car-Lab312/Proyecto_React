@@ -49,8 +49,8 @@ export function CRUD_digimoncomponent() {
         </div>
         <div className="digifields">
           {selectdigimonDetails?.fields?.length > 0 &&(
-          selectdigimonDetails.fields.map((digiimage) => (
-            <div style={{textAlign: "center"}}>
+          selectdigimonDetails.fields.map((digiimage, index) => (
+            <div style={{textAlign: "center"}} key={digiimage.id || index}>
               <img src={digiimage.image} data-tip={digiimage.name}  alt={digiimage.name} style={{padding: "2px", width: "60px", height: "60px"}}/>
             </div>
             ))
@@ -79,14 +79,14 @@ export function CRUD_digimoncomponent() {
             <div className="name-digi">
               <h4>Nombre:</h4>
             </div>
-              {selectdigimonDetails?.priorEvolutions?.length > 0 &&(
-              selectdigimonDetails.priorEvolutions.map((digievolucion) => (
-            <div className="multi-digimon">
+              {/* {selectdigimonDetails?.priorEvolutions?.length > 0 &&(
+              selectdigimonDetails.priorEvolutions.map((digievolucion, index) => (
+            <div className="multi-digimon" key={digievolucion.id || index}>
                 <Dropdown value={selectdigimonDetails} onChange={(e) => setselectdigimonDetails(e.value)} options={digievolucion} optionLabel="name" 
                 placeholder="Seleccione un digimon" className="w-full md:w-14rem" checkmark={true} highlightOnSelect={false} />
             </div>
               ))
-            )}
+            )} */}
           </div>
         </div>
     </div>
